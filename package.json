@@ -1,0 +1,37 @@
+{
+  "name": "notmedoc",
+  "version": "1.0.1",
+  "description": "For NotPetya Simulation",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon --exec electron",
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "repository": "https://github.com/RohanSenthil/NotMeDoc-Updater",
+  "publish": {
+    "provider": "github",
+    "releaseType": "release"
+  },
+  "build": {
+    "appId": "com.rohan.notmedoc",
+    "productName": "NotMeDoc",
+    "win": {
+      "target": "nsis"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "author": "Rohan",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^19.0.9",
+    "electron-builder": "^23.6.0",
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "electron-updater": "^5.3.0"
+  }
+}
