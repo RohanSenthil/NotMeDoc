@@ -21,8 +21,7 @@
       "target": "nsis"
     },
     "directories": {
-      "output": "dist",
-      "buildResources": "resources"
+      "output": "dist"
     }
   },
   "author": "Rohan",
