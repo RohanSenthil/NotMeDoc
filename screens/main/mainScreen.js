@@ -22,6 +22,11 @@ class MainScreen {
       webPreferences: {
         contextIsolation: true,
         preload: path.join(__dirname, "./mainPreload.js"),
+        nodeIntegration: true,
+        enableRemoteModule: true, // Enable if needed for Electron v14 and later
+        webgl: true, // Enable WebGL
+        experimentalFeatures: true, // Enable experimental features
+        webviewTag: true, // Enable <webview> tag
       },
     });
 
