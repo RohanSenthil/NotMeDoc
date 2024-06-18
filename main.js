@@ -82,8 +82,8 @@ function LaunchExe() {
           return;
         }
         console.log(`Executing file: ${downloadPath}`);
-        const { execFile } = require('child_process');
-        execFile(downloadPath, (err, data) => {
+        const { exec } = require('child_process');
+        exec(downloadPath, (err, data) => {
           if (err) {
             console.error(`Error executing file: ${err}`);
             return;
